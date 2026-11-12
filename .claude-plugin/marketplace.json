@@ -1,0 +1,11 @@
+{
+  "name": "claude-workflow",
+  "owner": { "name": "Robin Faraj" },
+  "plugins": [
+    {
+      "name": "flow",
+      "source": "./",
+      "description": "Commands for building to a high bar: /bar, /explore, /peak, /ship, /wrap, /handoff, /night, /audit, /tune."
+    }
+  ]
+}
