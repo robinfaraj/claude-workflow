@@ -1,6 +1,6 @@
 ---
-name: peak
-description: Run review rounds on finished work until nothing is left to fix, the way a demanding founder does QA. Use when the user types /peak, or asks "is this world class?", "roleplay as different users", "think about edge cases", "do iterations", "review rounds", "polish it", or before showing them any user-facing work.
+name: review-until-polished
+description: Run review rounds on finished work until nothing is left to fix, the way a demanding founder does QA. Use when the user types /review-until-polished, or asks "is this world class?", "roleplay as different users", "think about edge cases", "do iterations", "review rounds", "polish it", or before showing them any user-facing work.
 ---
 
 # Review until it is peak

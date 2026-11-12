@@ -1,6 +1,6 @@
 ---
-name: explore
-description: Research a feature or screen and present design variants in an artifact before anything is built. Use when the user types /explore, or asks to "research how others do this", "use Mobbin", "give me variants", "create a design exploration", "show me options as an artifact", or to settle a design direction or theme.
+name: research-and-design-variants
+description: Research a feature or screen and present design variants in an artifact before anything is built. Use when the user types /research-and-design-variants, or asks to "research how others do this", "use Mobbin", "give me variants", "create a design exploration", "show me options as an artifact", or to settle a design direction or theme.
 ---
 
 # Explore before building
@@ -16,4 +16,4 @@ Do not write product code in this step. The output is one artifact the user can 
 5. **Variants.** Build 3 real variants, not three colours of one idea. Each is rendered at true size in the artifact, in the project's design language, with real content, not lorem ipsum. Mobile and desktop where both exist.
 6. **Recommendation.** Say which you would ship and why, what you would take from the others, and what it costs to build.
 
-Publish the artifact, give the link, and stop for the user's pick. If they said they are away or asleep, pick your recommendation and continue with `/bar`.
+Publish the artifact, give the link, and stop for the user's pick. If they said they are away or asleep, pick your recommendation and continue with `/apply-quality-bar`.

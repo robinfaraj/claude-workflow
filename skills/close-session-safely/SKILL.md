@@ -1,6 +1,6 @@
 ---
-name: wrap
-description: Check whether a session can be closed safely and tie up loose ends. Use when the user types /wrap, or asks "can I close this session now?", "anything else open?", "all done?", "tickets updated?", "everything on main?", or "is it all live?".
+name: close-session-safely
+description: Check whether a session can be closed safely and tie up loose ends. Use when the user types /close-session-safely, or asks "can I close this session now?", "anything else open?", "all done?", "tickets updated?", "everything on main?", or "is it all live?".
 ---
 
 # Can this session be closed?

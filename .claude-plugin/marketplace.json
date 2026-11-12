@@ -5,7 +5,7 @@
     {
       "name": "flow",
       "source": "./",
-      "description": "Commands for building to a high bar: /bar, /explore, /peak, /ship, /wrap, /handoff, /night, /audit, /tune."
+      "description": "Commands for building to a high bar: /apply-quality-bar, /research-and-design-variants, /review-until-polished, /merge-deploy-verify, /close-session-safely, /handoff-to-new-session, /work-overnight, /review-code-quality, /improve-workflow-commands."
     }
   ]
 }

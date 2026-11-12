@@ -1,6 +1,6 @@
 ---
-name: ship
-description: Merge the current work, deploy it and confirm it is live. Only when the user types /ship or plainly says "merge", "deploy", "merge and deploy", "push to main" or "get it live".
+name: merge-deploy-verify
+description: Merge the current work, deploy it and confirm it is live. Only when the user types /merge-deploy-verify or plainly says "merge", "deploy", "merge and deploy", "push to main" or "get it live".
 disable-model-invocation: true
 ---
 

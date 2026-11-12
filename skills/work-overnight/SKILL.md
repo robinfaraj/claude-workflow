@@ -1,6 +1,6 @@
 ---
-name: night
-description: The user is going to sleep or leaving and wants work to continue unattended. Use when the user types /night, or says "going to sleep", "I'm off to bed", "work on this overnight", "will it be ready in the morning", or "what will you do while I'm asleep".
+name: work-overnight
+description: The user is going to sleep or leaving and wants work to continue unattended. Use when the user types /work-overnight, or says "going to sleep", "I'm off to bed", "work on this overnight", "will it be ready in the morning", or "what will you do while I'm asleep".
 ---
 
 # Overnight run
@@ -14,10 +14,10 @@ Goal for the morning: $ARGUMENTS (default: finish what this session is working o
 4. **Will it survive.** Check that the machine stays awake: start `caffeinate -dimsu -w $PPID` in the background if it is not already running, and tell them to leave the lid open and the charger in. If the work can run in the cloud instead, say that this is the safer option.
 
 ## While they are away
-- Do not stop to ask. Decide like an owner (see `/bar`), note each decision in one line for the morning report.
+- Do not stop to ask. Decide like an owner (see `/apply-quality-bar`), note each decision in one line for the morning report.
 - If you hit a usage limit, the session continues on its own after the reset; leave it.
 - If one item is blocked, write down why and move to the next. Never sit idle waiting.
-- Run `/peak` on anything user-facing before calling it finished.
+- Run `/review-until-polished` on anything user-facing before calling it finished.
 - Keep tickets current as the global rules say.
 
 ## Morning report (the last thing you write)

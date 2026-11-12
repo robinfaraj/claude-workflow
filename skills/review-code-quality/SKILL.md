@@ -1,6 +1,6 @@
 ---
-name: audit
-description: Review a codebase or one area of it for quality, from evidence, and leave it easier for the next session to work in. Use when the user types /audit, or asks for a "code cleanup", "code quality review", "is this codebase world class", "clean up this area", "would a new engineer understand this", or wants standards written down and enforced.
+name: review-code-quality
+description: Review a codebase or one area of it for quality, from evidence, and leave it easier for the next session to work in. Use when the user types /review-code-quality, or asks for a "code cleanup", "code quality review", "is this codebase world class", "clean up this area", "would a new engineer understand this", or wants standards written down and enforced.
 ---
 
 # Codebase audit

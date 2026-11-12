@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Summarise recent Claude Code prompts across every local account, for /tune."""
+"""Summarise recent Claude Code prompts across every local account, for /improve-workflow-commands."""
 import argparse, collections, datetime, glob, json, os, re
 
-CMDS = ["bar", "explore", "peak", "night", "wrap", "ship", "handoff", "audit", "tune"]
+CMDS = ["apply-quality-bar", "research-and-design-variants", "review-until-polished", "work-overnight", "close-session-safely", "merge-deploy-verify", "handoff-to-new-session", "review-code-quality", "improve-workflow-commands"]
 ap = argparse.ArgumentParser()
 ap.add_argument("--days", type=int, default=14)
 args = ap.parse_args()
@@ -28,7 +28,7 @@ for r in rows:
     by_session[r[2]].append(r)
 for sess, rs in by_session.items():
     for i, r in enumerate(rs):
-        m = re.match(r"/(?:[\w-]+:)?(\w+)", r[4])
+        m = re.match(r"/(?:[\w-]+:)?([\w-]+)", r[4])
         if m and m.group(1) in CMDS:
             used[m.group(1)] += 1
             for nxt in rs[i + 1 : i + 4]:
