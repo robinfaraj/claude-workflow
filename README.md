@@ -7,6 +7,7 @@ A working method for Claude Code, as commands. Each one replaces something that 
 | `/apply-quality-bar <task>` | Sets the quality bar and the way of working: decide like an owner, ground truth first, show before building, never show unpolished work. |
 | `/research-and-design-variants <feature>` | Research (own product, competitors, Mobbin), then three real variants in an artifact. No code yet. |
 | `/review-until-polished` | Review rounds on the running thing: three kinds of user, edge cases, a design lead's eye, clarity, copy, code. Fix, repeat, up to four rounds. |
+| `/design-moments-of-delight` | Finds the moments that deserve craft (success screens, waits, first run, transitions) and builds them, with rules for restraint. |
 | `/merge-deploy-verify` | Merge, deploy, check the live result. Only runs when typed. |
 | `/close-session-safely` | "Can I close this session?" Checks code, PRs, deploys, running tasks, promises, tickets, and cleans up. |
 | `/handoff-to-new-session` | Writes a one-page brief so a fresh session can take over. |

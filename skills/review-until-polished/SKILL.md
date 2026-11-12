@@ -15,9 +15,10 @@ Go through each lens, write down every finding, then fix them all.
 1. **Users.** Walk the flow as three people who really use this product: a first-timer who knows nothing, a busy regular on a phone, and a sceptic deciding whether to pay or churn. For each: where do they hesitate, what do they misread, what do they need that is missing?
 2. **Edge cases.** Empty, loading, error, offline, slow network, very long text, zero and huge numbers, no permission, first run, returning after a week, narrow (375px) and wide (1440px) screens, dark mode if the app has it.
 3. **Design lead at Linear or Apple.** Hierarchy, spacing rhythm, alignment, type scale, contrast, motion, consistency with the rest of the app. What looks cheap, random or generated? What would they refuse to ship? Check against `product-ux-standard` and the project's design system if present.
-4. **Clarity.** Does a stranger understand what this is and what to do in the first second? Is anything there that does not earn its place?
-5. **Copy.** Run `ux-writing` and `unslop` over every string. No jargon, no vague references, no "short sentence. Another short sentence." rhythm.
-6. **Engineer.** Read the diff as a reviewer: correctness, the repo's conventions, error handling, anything fragile. Run the project's checks.
+4. **Feel.** Use it in motion, not in screenshots: record the interaction. Does every press, transition and wait respond with weight and continuity? Which screens are plain where the user just did something that deserved a moment (success, connection, first result, a wait)? Run `/design-moments-of-delight` on those. Then cut any motion that is tiresome on the third watch.
+5. **Clarity.** Does a stranger understand what this is and what to do in the first second? Is anything there that does not earn its place?
+6. **Copy.** Run `ux-writing` and `unslop` over every string. No jargon, no vague references, no "short sentence. Another short sentence." rhythm.
+7. **Engineer.** Read the diff as a reviewer: correctness, the repo's conventions, error handling, anything fragile. Run the project's checks.
 
 ## Loop
 After fixing, run another round on the result with fresh screenshots. Stop when a round finds nothing that a user would notice, or after 4 rounds. Do not stop at the first round because it "looks good".

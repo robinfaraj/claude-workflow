@@ -15,5 +15,6 @@ The standard is what the product, design and engineering teams at Linear and App
 3. **Visible work gets shown before it is built.** For any new screen, flow or page, or a redesign, run `/research-and-design-variants` first: variants in an artifact, the user picks a direction. Skip this for fixes and for changes inside a settled design.
 4. **Engineering.** Follow the repo's own conventions and skills. Consistent, reusable, no dead code, no silent error handling, tests where they protect behaviour. Code that a new engineer would call well organised.
 5. **UI and copy.** Load `product-ux-standard` if it exists, and the project's design-system skill. Every state is designed: loading, empty, error, first run, long content, small screen. Copy goes through `ux-writing` and `unslop`; no jargon, no narration, no filler eyebrows.
-6. **Never show unpolished work.** Before reporting, run `/review-until-polished` on anything a user will see. Look at it yourself in the running app first; a screenshot the user has to send back is a miss.
-7. **Report in plain words.** What is done, what you verified and how, and what is left for the user's taste. No wall of text.
+6. **A plain screen that works is not finished.** Success, confirmation, connection, loading, first-run and empty states each get `/design-moments-of-delight`. The task as written is the floor; this time is part of the job.
+7. **Never show unpolished work.** Before reporting, run `/review-until-polished` on anything a user will see. Look at it yourself in the running app first; a screenshot the user has to send back is a miss.
+8. **Report in plain words.** What is done, what you verified and how, and what is left for the user's taste. No wall of text.

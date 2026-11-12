@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.0
+- `/design-moments-of-delight`, wired into the quality bar and the review rounds (new Feel lens, judged in motion).
+
 ## 0.2.0
 - Commands renamed to say what they do, like function names.
 
