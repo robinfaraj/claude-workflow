@@ -26,7 +26,7 @@ Go through each lens, write down every finding, then fix them all.
    - *Goal gradient and Zeigarnik*: progress is visible and the next step is obvious, so people finish.
    - *Von Restorff*: only the one thing that matters stands out.
    - *Postel's law*: accept messy input, give clean output.
-5. **Feel.** Use it in motion, not in screenshots: record the interaction. Does every press, transition and wait respond with weight and continuity? Which screens are plain where the user just did something that deserved a moment (success, connection, first result, a wait)? Run `/design-moments-of-delight` on those. Then cut any motion that is tiresome on the third watch.
+5. **Feel.** Use it in motion, not in screenshots: record the interaction. Does every press, transition and wait respond with weight and continuity? Which screens are plain where the user just did something that deserved a moment (success, connection, first result, a wait)? Run `/design-moments-of-delight` on those. Then cut any motion that is tiresome on the third watch, and anything that does not fit this product's audience and tone: overdone is a finding too.
 6. **Clarity.** Does a stranger understand what this is and what to do in the first second? Is anything there that does not earn its place?
 7. **Copy.** Run `ux-writing` and `unslop` over every string. No jargon, no vague references, no "short sentence. Another short sentence." rhythm.
 8. **Engineer.** Read the diff as a reviewer: correctness, the repo's conventions, error handling, anything fragile. Run the project's checks.

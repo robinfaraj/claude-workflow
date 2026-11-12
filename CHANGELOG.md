@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.5.0
+- Start from the user and the job (first principles); the level of delight is set by product and audience; overdone counts as a finding.
+
 ## 0.4.0
 - UX laws as their own review lens, Jakob's law first in the bar and in variant research.
 

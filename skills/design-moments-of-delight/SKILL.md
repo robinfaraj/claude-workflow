@@ -9,6 +9,9 @@ Where: $ARGUMENTS (default: the screens built or changed in this session)
 
 A plain screen that works is not finished. The task as written is the floor. Time spent here is part of the job, not extra; do not skip it to report sooner.
 
+## 0. Set the level for this product
+Say in two lines who the user is and what mood they are in at this moment, and what the product's character is (read the brand guide and the existing best screens). That sets the dial. A work tool used all day earns trust with speed, precision and small exact touches; a consumer app can be warmer and more playful; anything about money, health or an error stays calm. If in doubt, do less and do it better. The test for every idea: does it make this user feel the product was made with care for them, or is it showing off?
+
 ## 1. Find the moments
 Walk the flow and list every place the user feels something. These are where craft pays; most of the rest should stay quiet.
 - **They just did something that took effort or trust**: connected an account, paid, finished setup, published, invited a teammate. The most wasted screen in software is the plain "Success" page.
