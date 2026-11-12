@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.0
+- UX laws as their own review lens, Jakob's law first in the bar and in variant research.
+
 ## 0.3.0
 - `/design-moments-of-delight`, wired into the quality bar and the review rounds (new Feel lens, judged in motion).
 
