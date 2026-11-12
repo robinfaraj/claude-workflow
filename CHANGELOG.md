@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0
+- Removed `/design-moments-of-delight`: its first real test produced an overdone widget. A list of design moves gets executed as a checklist.
+- `/apply-quality-bar`, `/research-and-design-variants` and `/review-until-polished` now run only when typed.
+
 ## 0.5.0
 - Start from the user and the job (first principles); the level of delight is set by product and audience; overdone counts as a finding.
 

@@ -1,6 +1,7 @@
 ---
 name: apply-quality-bar
 description: The quality bar and working method for product, design and engineering work. Use when the user types /apply-quality-bar, or asks for "world class", "creme de la creme", "Linear-level", "Apple-level", "top 1%", "like a VC-backed startup would build it", or says "act as a world class team".
+disable-model-invocation: true
 ---
 
 # The bar
@@ -17,6 +18,5 @@ The standard is what the product, design and engineering teams at Linear and App
 5. **Engineering.** Follow the repo's own conventions and skills. Consistent, reusable, no dead code, no silent error handling, tests where they protect behaviour. Code that a new engineer would call well organised.
 6. **Familiar in how it works, special in how it feels.** Jakob's law first: before designing any screen, find how 2 or 3 leading products these users already know do the same job, and follow that pattern. Then Hick, Fitts, Tesler, the Doherty threshold and the peak-end rule; the full list is in `/review-until-polished`. Never invent a new way to do a standard thing.
 7. **UI and copy.** Load `product-ux-standard` if it exists, and the project's design-system skill. Every state is designed: loading, empty, error, first run, long content, small screen. Copy goes through `ux-writing` and `unslop`; no jargon, no narration, no filler eyebrows.
-8. **A plain screen that works is not finished, and an overdone one is worse.** Success, confirmation, connection, loading, first-run and empty states each get `/design-moments-of-delight`. The task as written is the floor; this time is part of the job. The amount is set by the product and its audience (point 1): enough that it feels cared for, never so much that it gets between the user and the job.
-9. **Never show unpolished work.** Before reporting, run `/review-until-polished` on anything a user will see. Look at it yourself in the running app first; a screenshot the user has to send back is a miss.
-10. **Report in plain words.** What is done, what you verified and how, and what is left for the user's taste. No wall of text.
+8. **Never show unpolished work.** Before reporting, run `/review-until-polished` on anything a user will see. Look at it yourself in the running app first; a screenshot the user has to send back is a miss.
+9. **Report in plain words.** What is done, what you verified and how, and what is left for the user's taste. No wall of text.

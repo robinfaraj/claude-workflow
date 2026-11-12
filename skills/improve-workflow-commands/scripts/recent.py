@@ -2,7 +2,7 @@
 """Summarise recent Claude Code prompts across every local account, for /improve-workflow-commands."""
 import argparse, collections, datetime, glob, json, os, re
 
-CMDS = ["apply-quality-bar", "research-and-design-variants", "review-until-polished", "work-overnight", "close-session-safely", "merge-deploy-verify", "handoff-to-new-session", "review-code-quality", "design-moments-of-delight", "improve-workflow-commands"]
+CMDS = ["apply-quality-bar", "research-and-design-variants", "review-until-polished", "work-overnight", "close-session-safely", "merge-deploy-verify", "handoff-to-new-session", "review-code-quality", "improve-workflow-commands"]
 ap = argparse.ArgumentParser()
 ap.add_argument("--days", type=int, default=14)
 args = ap.parse_args()

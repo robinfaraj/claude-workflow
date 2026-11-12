@@ -1,6 +1,7 @@
 ---
 name: research-and-design-variants
 description: Research a feature or screen and present design variants in an artifact before anything is built. Use when the user types /research-and-design-variants, or asks to "research how others do this", "use Mobbin", "give me variants", "create a design exploration", "show me options as an artifact", or to settle a design direction or theme.
+disable-model-invocation: true
 ---
 
 # Explore before building
