@@ -1,6 +1,6 @@
 {
   "name": "flow",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "A founder's working method as commands: set the bar, explore variants, review until it is peak, ship, wrap up, hand off, run overnight, audit a codebase.",
   "author": { "name": "Robin Faraj" }
 }
