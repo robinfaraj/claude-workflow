@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.0
+- Role agents: `cpo` (product, Linear and Apple bar, Mobbin first), `cto` (engineering, delete or reuse first, cost, risk, proof) and `customer-qa` (roleplays real customers, breaks it, checks every number, screenshots).
+- `taste.md`: the gate is the default. CPO and CTO before any non-trivial build, customer QA after, without being asked.
+- `install.sh` links the agents too.
+
 ## 0.7.1
 - `taste.md`: "Fit in the product before building" (where it lives, what it extends or replaces, variants when it doesn't clearly fit) and what "confident enough to merge" means.
 
