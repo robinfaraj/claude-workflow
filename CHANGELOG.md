@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.7.1
+- `taste.md`: "Fit in the product before building" (where it lives, what it extends or replaces, variants when it doesn't clearly fit) and what "confident enough to merge" means.
+
 ## 0.7.0
 - `taste.md`: the working agreement and the UI, copy and QA bar, loaded into every session by a SessionStart hook, so cloud sessions, Claude in Slack and other machines work to the same bar as the main laptop.
 - `product-ux-standard` moved in from a single account, so `/apply-quality-bar` finds it everywhere.
