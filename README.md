@@ -14,6 +14,19 @@ A working method for Claude Code, as commands. Each one replaces something that 
 | `/review-code-quality <area>` | Codebase review from evidence, ending in checks and types, not more rules. |
 | `/improve-workflow-commands` | Reads recent prompt history and proposes improvements to these commands. Only runs when typed. |
 
+## Always on
+
+Installed as a plugin, `taste.md` is loaded at the start of every session by a SessionStart hook: how to own the work, the UI and copy bar, QA before done. It is how a cloud session or Claude in Slack gets the same guidance as a local one. A repo turns it on for every session by listing the marketplace and plugin in its `.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "claude-workflow": { "source": { "source": "github", "repo": "robinfaraj/claude-workflow" } }
+  },
+  "enabledPlugins": { "flow@claude-workflow": true }
+}
+```
+
 ## Install
 
 **Your own machines** (short names like `/apply-quality-bar`, updated by `git pull`):
