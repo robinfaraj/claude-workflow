@@ -1,21 +1,28 @@
 #!/bin/bash
-# Link every command into each local Claude Code account, so they are typed
-# as /bar, /peak and so on, and a `git pull` here updates them everywhere.
+# Link every command and role agent into each local Claude Code account, so they
+# are typed as /apply-quality-bar and so on, and a `git pull` here updates them
+# everywhere. The working agreement (taste.md) is loaded by a SessionStart hook:
+# add `cat <this repo>/taste.md` to each account's settings, or install as a plugin.
 set -e
 REPO="$(cd "$(dirname "$0")" && pwd)"
-for CONFIG in "$HOME"/.claude "$HOME"/.claude-*; do
-    [ -d "$CONFIG" ] && [ -f "$CONFIG/.claude.json" -o -f "$CONFIG/settings.json" ] || continue
-    mkdir -p "$CONFIG/skills"
-    # An account whose skills folder is itself a link already shares another account's.
-    [ -L "$CONFIG/skills" ] && continue
-    for SKILL in "$REPO"/skills/*/; do
-        NAME=$(basename "$SKILL")
-        TARGET="$CONFIG/skills/$NAME"
+link_all() { # <source dir> <target dir>
+    local SRC="$1" DEST="$2"
+    mkdir -p "$DEST"
+    for ITEM in "$SRC"/*; do
+        [ -e "$ITEM" ] || continue
+        NAME=$(basename "$ITEM")
+        TARGET="$DEST/$NAME"
         if [ -e "$TARGET" ] && [ ! -L "$TARGET" ]; then
-            echo "skip $TARGET (a real folder is already there)"
+            echo "skip $TARGET (a real file is already there)"
             continue
         fi
-        ln -sfn "${SKILL%/}" "$TARGET"
+        ln -sfn "$ITEM" "$TARGET"
     done
-    echo "linked into $CONFIG/skills"
+}
+for CONFIG in "$HOME"/.claude "$HOME"/.claude-*; do
+    [ -d "$CONFIG" ] && [ -f "$CONFIG/.claude.json" -o -f "$CONFIG/settings.json" ] || continue
+    # An account whose folder is itself a link already shares another account's.
+    [ -L "$CONFIG/skills" ] || link_all "$REPO/skills" "$CONFIG/skills"
+    [ -L "$CONFIG/agents" ] || link_all "$REPO/agents" "$CONFIG/agents"
+    echo "linked into $CONFIG"
 done

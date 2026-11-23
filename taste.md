@@ -11,6 +11,11 @@ These hold in every session, local or cloud, unless the repo's own instructions 
 - Robin is the taste bottleneck, not the execution one. Run no-taste work in parallel; batch taste calls on one short decision page with a recommendation and a default for each.
 - A fix is not done while the same failure can recur somewhere else. Fix the class, not the instance.
 
+## The gate: every non-trivial ask, without being asked
+- Before building any new feature, flow, screen, concept or anything a customer will meet, run the `cpo` and `cto` agents in parallel on the ask, then reconcile them into one verdict: Build it, Build smaller, Don't build, or Needs Robin. Act on it. Skip the gate only for a typo-sized fix or work inside an already approved design.
+- After building anything a customer sees, receives, presses or is told, run the `customer-qa` agent (it must not be the session that built it) and fix what it finds before calling it done or merging.
+- Nobody should have to type "world class", "do research", "check Mobbin" or "roleplay the customers" to get this. It is the default.
+
 ## Fit in the product before building
 - Before building anything a user meets, say in two lines where it lives in the product, which existing surface, setting or flow it extends or replaces, and why that one can't hold it. Read the product's own overview and decisions first. A new page, setting, badge or notice has to earn its place; the default answer is to extend what exists or to remove something.
 - If the change doesn't clearly fit, or a new screen or flow is involved, show variants first and let Robin pick (`/research-and-design-variants`). Don't build or merge a new concept on a guess.

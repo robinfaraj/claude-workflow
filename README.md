@@ -14,6 +14,16 @@ A working method for Claude Code, as commands. Each one replaces something that 
 | `/review-code-quality <area>` | Codebase review from evidence, ending in checks and types, not more rules. |
 | `/improve-workflow-commands` | Reads recent prompt history and proposes improvements to these commands. Only runs when typed. |
 
+## Role agents
+
+| Agent | Role |
+|---|---|
+| `cpo` | Product lead, Linear and Apple bar. Customer, fit, Mobbin, every state. Verdict before building. |
+| `cto` | Engineering lead, Vercel and Stripe bar. Delete or reuse first, simplest design, cost, risk, proof. |
+| `customer-qa` | Independent tester. Roleplays real customers, breaks it, checks every number, screenshots. |
+
+The working agreement runs the CPO and CTO before any non-trivial build and customer QA after it, without being asked.
+
 ## Always on
 
 Installed as a plugin, `taste.md` is loaded at the start of every session by a SessionStart hook: how to own the work, the UI and copy bar, QA before done. It is how a cloud session or Claude in Slack gets the same guidance as a local one. A repo turns it on for every session by listing the marketplace and plugin in its `.claude/settings.json`:
