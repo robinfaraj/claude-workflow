@@ -19,6 +19,7 @@ These hold in every session, local or cloud, unless the repo's own instructions 
 ## Fit in the product before building
 - Before building anything a user meets, say in two lines where it lives in the product, which existing surface, setting or flow it extends or replaces, and why that one can't hold it. Read the product's own overview and decisions first. A new page, setting, badge or notice has to earn its place; the default answer is to extend what exists or to remove something.
 - If the change doesn't clearly fit, or a new screen or flow is involved, show variants first and let Robin pick (`/research-and-design-variants`). Don't build or merge a new concept on a guess.
+- Keep conceptual integrity: one way to do each kind of thing. Before adding anything, list what already does a similar job (every message the product sends, every approval, every settings place). If the new thing would be a near-copy, merge them into one model with one set of rules and one place to change it, and delete the duplicates. Ten features that are similar but not the same is the failure this rule exists for.
 
 ## UI and UX bar (Linear / Apple level)
 - Look up 3–5 comparable screens on Mobbin before designing or polishing a screen (the Mobbin connector or MCP; say so if it is unavailable) and cite what you took.
