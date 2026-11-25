@@ -21,8 +21,9 @@ A working method for Claude Code, as commands. Each one replaces something that 
 | `cpo` | Product lead, Linear and Apple bar. Customer, fit, Mobbin, every state. Verdict before building. |
 | `cto` | Engineering lead, Vercel and Stripe bar. Delete or reuse first, simplest design, cost, risk, proof. |
 | `customer-qa` | Independent tester. Roleplays real customers, breaks it, checks every number, screenshots. |
+| `design-critic` | Ex-Linear senior designer. Signs off the design before the build and the screenshots before the merge. |
 
-The working agreement runs the CPO and CTO before any non-trivial build and customer QA after it, without being asked.
+The working agreement runs the CPO and CTO before any non-trivial build, then customer QA and the design critic after it, without being asked.
 
 ## Always on
 
@@ -36,6 +37,10 @@ Installed as a plugin, `taste.md` is loaded at the start of every session by a S
   "enabledPlugins": { "flow@claude-workflow": true }
 }
 ```
+
+## For a team repo
+
+To give everyone who works in a repo the same baseline, without each person installing anything, copy this into the repo: the agents into `.claude/agents/` and `taste.md` somewhere a project SessionStart hook prints it. Tinkers does this with `scripts/cloud/sync-flow.sh` and `scripts/cloud/session-start.sh`, which skips the print when the person already has this plugin, so nobody reads it twice.
 
 ## Install
 

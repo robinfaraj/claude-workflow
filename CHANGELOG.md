@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0
+- `design-critic` agent (ex-Linear senior designer): signs off the approved design before the build and the screenshots before the merge. The gate now runs it beside customer QA.
+- `taste.md` is the founders' working agreement, not one person's, so a teammate's sessions read true too ("Needs a founder" instead of a name).
+- From two weeks of prompts, what was still typed by hand: keep going without "go on"; read earlier research and artifacts before proposing; a craft check (cheap, generic or vibe-coded fails; delight only where earned); think of every other customer a change touches; short, plain replies that say what is live and what waits on whom; docs change with the change that makes them wrong.
+- `/improve-workflow-commands`: fixed the script path and ignore scripted pings in the history.
+
 ## 0.8.0
 - Role agents: `cpo` (product, Linear and Apple bar, Mobbin first), `cto` (engineering, delete or reuse first, cost, risk, proof) and `customer-qa` (roleplays real customers, breaks it, checks every number, screenshots).
 - `taste.md`: the gate is the default. CPO and CTO before any non-trivial build, customer QA after, without being asked.
