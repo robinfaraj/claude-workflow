@@ -6,6 +6,7 @@ CMDS = ["apply-quality-bar", "research-and-design-variants", "review-until-polis
 ap = argparse.ArgumentParser()
 ap.add_argument("--days", type=int, default=14)
 args = ap.parse_args()
+AUTOMATED = re.compile(r"(reply with (exactly|just|the single)|run this shell command|say ready in one word)", re.I)
 cut = (datetime.datetime.now() - datetime.timedelta(days=args.days)).timestamp() * 1000
 
 rows = []
@@ -16,7 +17,8 @@ for f in glob.glob(os.path.expanduser("~/.claude*/history.jsonl")):
             r = json.loads(line)
         except ValueError:
             continue
-        if r.get("timestamp", 0) >= cut:
+        # Scripted pings from tools that drive sessions ("reply with exactly...") are not the user typing.
+        if r.get("timestamp", 0) >= cut and not AUTOMATED.match(r.get("display", "").strip()):
             rows.append((r["timestamp"], acct, r.get("sessionId"), os.path.basename(r.get("project", "")), r.get("display", "").strip()))
 rows.sort()
 print(f"{len(rows)} prompts in the last {args.days} days\n")

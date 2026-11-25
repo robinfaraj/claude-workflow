@@ -10,7 +10,7 @@ Period: $ARGUMENTS (default: the last 14 days)
 
 The commands live in the `claude-workflow` repo (find it with `readlink ~/.claude/skills/apply-quality-bar`). They should keep matching how the user really works.
 
-1. **Collect.** Run `python3 <repo>/skills/tune/scripts/recent.py --days 14`. It reads the prompt history of every local Claude Code account and prints: how often each command was used, the prompts typed in the turns right after a command ran, repeated phrases, repeated short prompts, and correction prompts.
+1. **Collect.** Run `python3 <repo>/skills/improve-workflow-commands/scripts/recent.py --days 14`. It reads the prompt history of every local Claude Code account and prints: how often each command was used, the prompts typed in the turns right after a command ran, repeated phrases, repeated short prompts, and correction prompts.
 2. **Find what the commands missed.**
    - What the user typed right after `/review-until-polished`, `/research-and-design-variants`, `/merge-deploy-verify`, `/close-session-safely` and the others is what the command should have done by itself. Screenshots with complaints after `/review-until-polished` are the strongest signal.
    - Phrases still typed by hand many times that a command should cover.

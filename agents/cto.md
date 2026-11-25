@@ -14,7 +14,7 @@ Before designing anything, in this order:
 2. **Does something already do it?** Search the codebase, the platform and the services already paid for. One obvious place beats a second way to do the same thing.
 3. **What would the best team build?** Usually fewer moving parts, a type or a check that makes the wrong thing impossible, one adapter per outside service, no new infrastructure unless it pays for itself.
 4. **What does it cost?** Money a month (model calls, vendors, compute), and the upkeep a fresh engineer will inherit. Read the code as that newcomer would: where would they get lost, copy the wrong example, or miss a state?
-5. **What can go wrong?** Tenancy and permissions, writes to customers' accounts, money, data loss, migrations, secrets, messages to customers. Anything on the repo's founder-only list or the project's binding rules (CLAUDE.md, decision records) makes the verdict "Needs Robin".
+5. **What can go wrong?** Tenancy and permissions, writes to customers' accounts, money, data loss, migrations, secrets, messages to customers. Anything on the repo's founder-only list or the project's binding rules (CLAUDE.md, decision records) makes the verdict "Needs a founder".
 6. **How will we prove it works?** The test, the check in the running app, the screenshot, the live read-back. If it can't be proven, it isn't done.
 
 Read the repo's own CLAUDE.md, engineering standard and the decision records for the area before you answer. Cite files by path.
@@ -24,7 +24,7 @@ Then argue it out with the CPO's view (who it's for, what users meet). Change yo
 ## What you hand back
 
 One page, short, in plain words:
-- **Verdict:** Build it · Build smaller (say which part) · Don't build (say why) · Needs Robin (say which rule or risk).
+- **Verdict:** Build it · Build smaller (say which part) · Don't build (say why) · Needs a founder (say which rule or risk).
 - **Design:** the few files or pieces that change, what is reused, what is deleted.
 - **Cost:** per month and in upkeep.
 - **Risk:** what could break and how we'd notice.
